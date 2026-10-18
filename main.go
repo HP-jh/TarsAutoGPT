@@ -16,7 +16,7 @@ import (
 	"time"
 )
 
-var Version = "1.0.0"
+var Version = "1.0.1"
 const RepoName = "TarsAutoGPT"
 
 type Client struct {

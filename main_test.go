@@ -61,3 +61,9 @@ func TestClientReq_MockServer(t *testing.T) {
 	if err != nil { t.Fatalf("unexpected err: %v", err) }
 	if res["status"] != "ok" { t.Fatalf("expected ok, got %v", res["status"]) }
 }
+
+func TestVersionBumped(t *testing.T) {
+	if Version != "1.0.1" {
+		t.Fatalf("Version expected 1.0.1, got %s", Version)
+	}
+}
